@@ -18,6 +18,7 @@ class AssetsManager {
   static const String iosImage = '${ASSETSPATH}/apple$PNGFORMATE';
   static const String desktopImage = '${ASSETSPATH}/desktop$PNGFORMATE';
   static const String webImage = '${ASSETSPATH}/web$PNGFORMATE';
+
   static const String splashviewSpotifyImage =
       '${ASSETSPATH2}/splashview_spotify$PNGFORMATE';
   static const String splashviewWhatsAppImage =
@@ -31,4 +32,22 @@ class AssetsManager {
   static const String linkedInImage = '${ASSETSPATH}/linkedin-logo$PNGFORMATE';
   static const String telegramImage = '${ASSETSPATH}/telegram$PNGFORMATE';
   static const String instagramImage = '${ASSETSPATH}/insta$PNGFORMATE';
+
+  static const String travellerAppImage =
+      '${ASSETSPATH2}/traveller-app$PNGFORMATE';
+
+  static const String agencyAppImage = '${ASSETSPATH2}/agency-app$PNGFORMATE';
+
+  static const String gitlabImage = '${ASSETSPATH}/gitlab$PNGFORMATE';
+  static const String swiftUIImage = '${ASSETSPATH}/swiftUi$PNGFORMATE';
+  static const String uiKitImage = '${ASSETSPATH}/uiKit$PNGFORMATE';
+  static const String jetPackComposeImage =
+      '${ASSETSPATH}/jetpack_compose$PNGFORMATE';
+  static const String tailwindcssImage = '${ASSETSPATH}/tailwind$PNGFORMATE';
+  static const String angularImage = '${ASSETSPATH}/angular$PNGFORMATE';
+  static const String swiftImage = '${ASSETSPATH}/swift$PNGFORMATE';
+  static const String kotlinImage = '${ASSETSPATH}/kotlin$PNGFORMATE';
+  static const String goLangImage = '${ASSETSPATH}/golang$PNGFORMATE';
+  static const String cSharpImage = '${ASSETSPATH}/Csharp$PNGFORMATE';
+  static const String dotnetImage = '${ASSETSPATH}/dot-net-core$PNGFORMATE';
 }

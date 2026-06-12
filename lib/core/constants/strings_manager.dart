@@ -11,6 +11,9 @@ class StringsManager {
   static const String getInTouch = "Get in Touch";
   static const String dart = "Dart";
   static const String flutter = "Flutter";
+  static const String swiftUI = "SwiftUI";
+  static const String uiKit = "UIKit";
+  static const String jetPackCompose = "JetPack Compose";
   static const String git = "Git";
   static const String gitHub = "GitHub";
   static const String html = "Html5";
@@ -18,6 +21,10 @@ class StringsManager {
   static const String cSharp = "C#";
   static const String cpp = "C++";
   static const String js = "JS";
+  static const String gitlab = "GitLab";
+  static const String swift = "Swift";
+  static const String kotlin = "Kotlin";
+
   static const String androidDev = "Android Dev";
   static const String iosDev = "IOS Dev";
   static const String desktopDev = "Desktop Dev";
@@ -33,8 +40,10 @@ class StringsManager {
   static const String movieApp = "Movie Web App";
   static const String movieAppSubTitle =
       "This app is for those who are interested in watching movies and series.";
-  static const String movieAndroid = "https://github.com/Marwansalem122/Flutter-Web-Movie-";
-  static const String movieIos = "https://github.com/Marwansalem122/Flutter-Web-Movie-";
+  static const String movieAndroid =
+      "https://github.com/Marwansalem122/Flutter-Web-Movie-";
+  static const String movieIos =
+      "https://github.com/Marwansalem122/Flutter-Web-Movie-";
   static const String movieWeb =
       "https://github.com/Marwansalem122/Flutter-Web-Movie-";
   static const String spotify = "Spotify";
@@ -62,13 +71,36 @@ class StringsManager {
       "https://github.com/Marwansalem122/Amazon-App";
   static const String amazonAppWeb =
       "https://github.com/Marwansalem122/Amazon-App/tree/main/admin_web_portal";
+  static const String safariaTraveller = "Safaria Traveller";
+  static const String safariaTravellerSubTitle =
+      "This app is for those who are interested in booking trips and tours.";
+  static const String safariaTravellerAndroid =
+      "https://play.google.com/store/apps/details?id=com.safaria.traveller";
+  static const String safariaTravellerIos =
+      "https://apps.apple.com/eg/app/سفرية-احجز-الرحلات-والجولات/id6736648418?l=ar";
+  static const String safariaTravellerWeb =
+      "";
+
+  static const String safariaAgencyApp = "Safaria Agency";
+  static const String safariaAgencyAppSubTitle =
+      "This app is for Agencies to add trips that show in Safaria Traveller app";
+  static const String safariaAgencyAppAndroid =
+      "https://play.google.com/store/apps/details?id=com.safaria.agency";
+  static const String safariaAgencyAppIos =
+      "https://apps.apple.com/eg/app/سفرية-مركز-وكالات-السفر/id6736684581?l=ar";
+  static const String safariaAgencyAppWeb = "https://app.agency.dev.safaria.co";
   static const String workProjects = "Work Projects";
   static const String availableOn = "Available On";
   static const String yourName = "Your Name";
   static const String yourEmail = "Your Email";
   static const String yourMessage = "Your Message";
   static const String githubLink = "https://github.com/Marwansalem122";
-  static const String linkedInLink = "https://www.linkedin.com/in/marwansalemabdellatif/";
+  static const String linkedInLink =
+      "https://www.linkedin.com/in/marwansalemabdellatif/";
   static const String telegramLink = "https://t.me/MarwanSalemAbdelLatif";
-  static const String madeBy = "Made By Marwan salem with Flutter 3.24" ;
+  static const String madeBy = "Made By Marwan salem with Flutter 3.24";
+  // static const String cSharp = "C#";
+  static const String dotnet = "Dot Net core";
+  static const String golang = "Go Lang";
+  
 }

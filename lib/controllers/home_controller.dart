@@ -42,6 +42,14 @@ class HomeController {
       "title": StringsManager.dart,
     },
     {
+      "img": AssetsManager.swiftImage,
+      "title": StringsManager.swift,
+    },
+    {
+      "img": AssetsManager.kotlinImage,
+      "title": StringsManager.kotlin,
+    },
+    {
       "img": AssetsManager.flutterImage,
       "title": StringsManager.flutter,
     },
@@ -68,6 +76,34 @@ class HomeController {
     {
       "img": AssetsManager.githubImage,
       "title": StringsManager.gitHub,
+    },
+    {
+      "img": AssetsManager.gitlabImage,
+      "title": StringsManager.gitlab,
+    },
+    {
+      "img": AssetsManager.swiftUIImage,
+      "title": StringsManager.swiftUI,
+    },
+    {
+      "img": AssetsManager.uiKitImage,
+      "title": StringsManager.uiKit,
+    },
+    {
+      "img": AssetsManager.jetPackComposeImage,
+      "title": StringsManager.jetPackCompose,
+    },
+    {
+      "img": AssetsManager.goLangImage,
+      "title": StringsManager.golang,
+    },
+    {
+      "img": AssetsManager.cSharpImage,
+      "title": StringsManager.cSharp,
+    },
+    {
+      "img": AssetsManager.dotnetImage,
+      "title": StringsManager.dotnet,
     },
   ];
 }

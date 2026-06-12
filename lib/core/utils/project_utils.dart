@@ -8,56 +8,65 @@ class ProjectUtils {
   final String androidLink;
   final String iosLink;
   final String webLink;
+  final String githubLink;
+
   ProjectUtils({
     required this.image,
     required this.title,
     required this.subTitle,
-    required this.androidLink,
-    required this.iosLink,
-    required this.webLink,
+    this.androidLink = '',
+    this.iosLink = '',
+    this.webLink = '',
+    this.githubLink = '',
   });
 }
 
 //Hobby Project Utils
- List<ProjectUtils> hobbyProjectUtils = [
+List<ProjectUtils> hobbyProjectUtils = [
+  ProjectUtils(
+    image: AssetsManager.travellerAppImage,
+    title: StringsManager.safariaTraveller,
+    subTitle: StringsManager.safariaTravellerSubTitle,
+    androidLink: StringsManager.safariaTravellerAndroid,
+    iosLink: StringsManager.safariaTravellerIos,
+    webLink: StringsManager.safariaTravellerWeb,
+  ),
+  ProjectUtils(
+    image: AssetsManager.agencyAppImage,
+    title: StringsManager.safariaAgencyApp,
+    subTitle: StringsManager.safariaAgencyAppSubTitle,
+    androidLink: StringsManager.safariaAgencyAppAndroid,
+    iosLink: StringsManager.safariaAgencyAppIos,
+    webLink: StringsManager.safariaAgencyAppWeb,
+  ),
   ProjectUtils(
     image: AssetsManager.splashviewCafitImage,
     title: StringsManager.cafit,
     subTitle: StringsManager.cafitSubTitle,
-    androidLink: StringsManager.fitnessAndroid,
-    iosLink: StringsManager.fitnessIos,
-    webLink: StringsManager.fitnessWeb,
+    githubLink: StringsManager.fitnessAndroid,
   ),
   ProjectUtils(
     image: AssetsManager.splashviewMovieAppImage,
     title: StringsManager.movieApp,
     subTitle: StringsManager.movieAppSubTitle,
-    androidLink: StringsManager.movieAndroid,
-    iosLink: StringsManager.movieIos,
-    webLink: StringsManager.movieWeb,
+    githubLink: StringsManager.movieAndroid,
   ),
   ProjectUtils(
     image: AssetsManager.splashviewSpotifyImage,
     title: StringsManager.spotify,
     subTitle: StringsManager.spotifySubTitle,
-    androidLink: StringsManager.spotifyAndroid,
-    iosLink: StringsManager.spotifyIos,
-    webLink: StringsManager.spotifyWeb,
+    githubLink: StringsManager.spotifyAndroid,
   ),
   ProjectUtils(
     image: AssetsManager.splashviewWhatsAppImage,
     title: StringsManager.whatsApp,
     subTitle: StringsManager.whatsAppSubTitle,
-    androidLink: StringsManager.whatsAPPAndroid,
-    iosLink: StringsManager.whatsAPPIos,
-    webLink: StringsManager.whatsAPPWeb,
+    githubLink: StringsManager.whatsAPPAndroid,
   ),
   ProjectUtils(
     image: AssetsManager.amazonAppImage,
     title: StringsManager.amazonApp,
     subTitle: StringsManager.amazonAppSubTitle,
-    androidLink: StringsManager.amazonAppAndroid,
-    iosLink: StringsManager.amazonAppIos,
-    webLink: StringsManager.amazonAppWeb,
+    githubLink: StringsManager.amazonAppAndroid,
   ),
 ];

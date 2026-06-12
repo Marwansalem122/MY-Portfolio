@@ -16,10 +16,16 @@ class ProjectCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        js.context.callMethod(
-          'open',
-          [projectUtils.androidLink, projectUtils.iosLink, projectUtils.webLink],
-        );
+        final link = projectUtils.githubLink.trim().isNotEmpty 
+            ? projectUtils.githubLink 
+            : projectUtils.androidLink.trim().isNotEmpty
+                ? projectUtils.androidLink
+                : projectUtils.iosLink.trim().isNotEmpty
+                    ? projectUtils.iosLink
+                    : projectUtils.webLink;
+        if (link.trim().isNotEmpty) {
+          js.context.callMethod('open', [link]);
+        }
       },
       child: Container(
           width: WidthSizeManager.w260,
@@ -82,7 +88,19 @@ class ProjectCardWidget extends StatelessWidget {
                               color: AppColor.yellowSecondary),
                         ),
                         const Spacer(),
-                        (projectUtils.androidLink.isNotEmpty)
+                        (projectUtils.githubLink.trim().isNotEmpty)
+                            ? InkWell(
+                                onTap: () {
+                                  js.context.callMethod(
+                                    'open',
+                                    [projectUtils.githubLink],
+                                  );
+                                },
+                                child: Image.asset(AssetsManager.githubImage,
+                                    width: WidthSizeManager.w12),
+                              )
+                            : const SizedBox.shrink(),
+                        (projectUtils.androidLink.trim().isNotEmpty)
                             ? InkWell(
                                 onTap: () {
                                   js.context.callMethod(
@@ -94,7 +112,7 @@ class ProjectCardWidget extends StatelessWidget {
                                     width: WidthSizeManager.w12),
                               )
                             : const SizedBox.shrink(),
-                        (projectUtils.iosLink.isNotEmpty)
+                        (projectUtils.iosLink.trim().isNotEmpty)
                             ? Padding(
                                 padding: const EdgeInsets.only(
                                     left: WidthSizeManager.w6),
@@ -110,7 +128,7 @@ class ProjectCardWidget extends StatelessWidget {
                                 ),
                               )
                             : const SizedBox.shrink(),
-                        (projectUtils.webLink.isNotEmpty)
+                        (projectUtils.webLink.trim().isNotEmpty)
                             ? Padding(
                                 padding: const EdgeInsets.only(
                                     left: WidthSizeManager.w6),
