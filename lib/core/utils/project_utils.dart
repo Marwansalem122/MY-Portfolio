@@ -40,6 +40,14 @@ List<ProjectUtils> hobbyProjectUtils = [
     webLink: StringsManager.safariaAgencyAppWeb,
   ),
   ProjectUtils(
+    image: AssetsManager.telehealthAppImage,
+    title: StringsManager.telehealth,
+    subTitle: StringsManager.telehealthSubTitle,
+    androidLink: StringsManager.telehealthAndroid,
+    iosLink: StringsManager.telehealthIos,
+    webLink: StringsManager.telehealthWeb,
+  ),
+  ProjectUtils(
     image: AssetsManager.splashviewCafitImage,
     title: StringsManager.cafit,
     subTitle: StringsManager.cafitSubTitle,

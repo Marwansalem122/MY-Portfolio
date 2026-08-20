@@ -29,7 +29,9 @@ class StringsManager {
   static const String iosDev = "IOS Dev";
   static const String desktopDev = "Desktop Dev";
   static const String webDev = "web Dev";
-  static const String cafit = "Cafit";
+  static const String telehealth = "Telehealth";
+  static const String telehealthSubTitle ="Telehealth is a digital healthcare platform that connects patients with doctors remotely through online consultations. It enables patients to book appointments, communicate with doctors via chat or video calls, manage medical information, make payments, and receive consultation summaries and AI-powered assistance—all in one secure platform.";
+       static const String cafit = "Cafit";
   static const String cafitSubTitle =
       "This app is for those who are interested in working out and keeping their bodies healthy.";
   static const String fitnessAndroid =
@@ -98,6 +100,9 @@ class StringsManager {
   static const String linkedInLink =
       "https://www.linkedin.com/in/marwansalemabdellatif/";
   static const String telegramLink = "https://t.me/MarwanSalemAbdelLatif";
+  static const String telehealthAndroid = "https://github.com/Marwansalem122/-Full-Stack-Telehealth-App-Flutter-BLoC-Dotnet-core10-Masterclass-Clean-Architecture-WebRTC-Stripe";
+  static const String telehealthIos = "https://github.com/Marwansalem122/-Full-Stack-Telehealth-App-Flutter-BLoC-Dotnet-core10-Masterclass-Clean-Architecture-WebRTC-Stripe";
+  static const String telehealthWeb = "https://github.com/Marwansalem122/-Full-Stack-Telehealth-App-Flutter-BLoC-Dotnet-core10-Masterclass-Clean-Architecture-WebRTC-Stripe";
   static const String madeBy = "Made By Marwan salem with Flutter 3.24";
   // static const String cSharp = "C#";
   static const String dotnet = "Dot Net core";

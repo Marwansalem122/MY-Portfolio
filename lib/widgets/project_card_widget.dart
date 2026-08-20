@@ -1,4 +1,7 @@
+import 'dart:js' as js;
+
 import 'package:flutter/material.dart';
+
 import 'package:my_portfolio/core/constants/app_color.dart';
 import 'package:my_portfolio/core/constants/assets_manager.dart';
 import 'package:my_portfolio/core/constants/font_size_manager.dart';
@@ -6,7 +9,6 @@ import 'package:my_portfolio/core/constants/height_size_manager.dart';
 import 'package:my_portfolio/core/constants/strings_manager.dart';
 import 'package:my_portfolio/core/constants/width_size_manager.dart';
 import 'package:my_portfolio/core/utils/project_utils.dart';
-import 'dart:js' as js;
 
 class ProjectCardWidget extends StatelessWidget {
   final ProjectUtils projectUtils;
@@ -70,6 +72,8 @@ class ProjectCardWidget extends StatelessWidget {
                         fontSize: FontSizeManager.f12,
                         fontWeight: FontWeight.bold,
                         color: AppColor.whiteSecondary),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 3,
                   ),
                 ),
                 const Spacer(),

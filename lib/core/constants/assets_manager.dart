@@ -38,6 +38,9 @@ class AssetsManager {
 
   static const String agencyAppImage = '${ASSETSPATH2}/agency-app$PNGFORMATE';
 
+  static const String telehealthAppImage =
+      '${ASSETSPATH2}/telehealth-app$PNGFORMATE';
+
   static const String gitlabImage = '${ASSETSPATH}/gitlab$PNGFORMATE';
   static const String swiftUIImage = '${ASSETSPATH}/swiftUi$PNGFORMATE';
   static const String uiKitImage = '${ASSETSPATH}/uiKit$PNGFORMATE';
