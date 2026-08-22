@@ -43,9 +43,7 @@ List<ProjectUtils> hobbyProjectUtils = [
     image: AssetsManager.telehealthAppImage,
     title: StringsManager.telehealth,
     subTitle: StringsManager.telehealthSubTitle,
-    androidLink: StringsManager.telehealthAndroid,
-    iosLink: StringsManager.telehealthIos,
-    webLink: StringsManager.telehealthWeb,
+    githubLink: StringsManager.telehealthGithub,
   ),
   ProjectUtils(
     image: AssetsManager.splashviewCafitImage,
