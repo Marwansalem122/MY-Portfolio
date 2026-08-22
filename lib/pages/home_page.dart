@@ -16,6 +16,7 @@ import 'package:my_portfolio/widgets/header_deasktop.dart';
 import 'package:my_portfolio/widgets/header_mobile.dart';
 import 'package:my_portfolio/widgets/main_desktop.dart';
 import 'package:my_portfolio/widgets/main_mobile.dart';
+import 'package:my_portfolio/widgets/experience_section.dart';
 import 'package:my_portfolio/widgets/project_section.dart';
 import 'package:my_portfolio/widgets/skills_desktop.dart';
 import 'package:my_portfolio/widgets/skills_mobile.dart';
@@ -31,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   final ScrollController scrollController = ScrollController();
   final List<GlobalKey> navKeys =
-      List<GlobalKey>.generate(4, (index) => GlobalKey());
+      List<GlobalKey>.generate(5, (index) => GlobalKey());
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +74,7 @@ class _HomePageState extends State<HomePage> {
               (constraints.maxWidth > WidthSizeManager.kMinDesktopWidth)
                   ?  MainDesktop(onTab: (int index){
                     //DO:Call Function
-                    scrollToSection(3);
+                    scrollToSection(4);
                   })
                   :  MainMobile(onTab:(int index){
 
@@ -104,13 +105,16 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
+              //EXPERIENCE
+               ExperienceSection(key: navKeys[2]),
+
               //PROJECTS
-              ProjectSection(key: navKeys[2]),
+              ProjectSection(key: navKeys[3]),
               const SizedBox(height: HeightSizeManager.h30),
 
               //CONTACTS
               ContactSection(
-                key: navKeys[3],
+                key: navKeys[4],
               ),
               const SizedBox(height: HeightSizeManager.h30),
 
@@ -124,7 +128,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void scrollToSection(int navIndex) {
-    if (navIndex == 4) {
+    if (navIndex == 5) {
       js.context.callMethod(
                                   'open',
                                   ["https://godadev.com/blogs/"],

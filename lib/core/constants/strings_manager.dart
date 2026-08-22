@@ -2,6 +2,7 @@ class StringsManager {
   static const String myIcon = "MS";
   static const String home = "Home";
   static const String skills = "Skills";
+  static const String experience = "Experience";
   static const String projects = "Projects";
   static const String contact = "Contact";
   static const String blog = "Blog";

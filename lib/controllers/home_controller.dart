@@ -6,6 +6,7 @@ class HomeController {
   static const List<String> navBarTextButtons = [
     StringsManager.home,
     StringsManager.skills,
+    StringsManager.experience,
     StringsManager.projects,
     StringsManager.contact,
     StringsManager.blog,
@@ -13,6 +14,7 @@ class HomeController {
   static const List<IconData> navBarIconButton = [
     Icons.home,
     Icons.handyman_outlined,
+    Icons.work_history_outlined,
     Icons.apps,
     Icons.quick_contacts_mail,
     Icons.web,
